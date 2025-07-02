@@ -1,0 +1,33 @@
+.card {
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 90%;
+  background-image: linear-gradient(to right top, #3b5378, #2a5493, #1454ad, #0652c5, #214ddb);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtle hover effect */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional heading inside card */
+.card h2, .card h3 {
+  margin-top: 0;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Optional paragraph or text inside card */
+.card p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Optional content spacing */
+.card > *:not(:last-child) {
+  margin-bottom: 1rem;
+}

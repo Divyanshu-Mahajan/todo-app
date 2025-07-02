@@ -1,0 +1,164 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.header {
+    width: 90%;
+    max-width: 640px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #1976d2;
+    margin-bottom: 1rem;
+}
+
+.header h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.about__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.about__inner__left,
+.about__inner__right {
+    flex: 1;
+    min-width: 280px;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__inner__left ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.about__inner__left li {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Profile image and text */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about__inner__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 14px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .about__inner {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .header {
+        width: 90%;
+    }
+
+    .about__inner__left,
+    .about__inner__right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 468px) {
+    .about {
+        padding: 1rem;
+    }
+
+    .header {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .header h2 {
+        font-size: 1.2rem;
+    }
+
+    .about__inner {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .about__inner__left,
+    .about__inner__right {
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        margin-top: 12px;
+    }
+
+    .about__inner__left p,
+    .about__inner__left li {
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .image-section img {
+        width: 90%;
+        max-width: 200px;
+    }
+
+    .profile {
+        gap: 0.5rem;
+    }
+
+    .profile p {
+        font-size: 0.9rem;
+    }
+
+    .profile a {
+        font-size: 0.85rem;
+    }
+}
